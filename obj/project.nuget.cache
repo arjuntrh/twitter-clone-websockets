@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "z2ageB9znxlM/79NojbBpMqcwkIXvbZt+FiAs9n+fpD35RKevho3T6VVfo1ZyI0Q/rIjgEsWNvPG37dkD1M/pg==",
+  "success": true,
+  "projectFilePath": "/Users/arjuntr/Desktop/To Submit/project4_2/Twitter_Clone.fsproj",
+  "expectedPackageFiles": [
+    "/Users/arjuntr/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512",
+    "/Users/arjuntr/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/arjuntr/.nuget/packages/suave/2.6.0/suave.2.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

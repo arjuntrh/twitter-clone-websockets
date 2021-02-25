@@ -1,0 +1,285 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "FSharp.Core/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FSharp.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FSharp.Core.dll": {}
+        },
+        "resource": {
+          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Suave/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "FSharp.Core": "0.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Suave.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Suave.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FSharp.Core/5.0.0": {
+      "sha512": "iHoYXA0VaSQUONGENB1aVafjDDZDZpwu39MtaRCTrmwFW/cTcK0b2yKNVYneFHJMc3ChtsSoM9lNtJ1dYXkHfA==",
+      "type": "package",
+      "path": "fsharp.core/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "fsharp.core.5.0.0.nupkg.sha512",
+        "fsharp.core.nuspec",
+        "lib/netstandard2.0/FSharp.Core.dll",
+        "lib/netstandard2.0/FSharp.Core.xml",
+        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll",
+        "paket-installmodel.cache"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Suave/2.6.0": {
+      "sha512": "GFm/CR3QSc5FRc+pZ4uar+eMRPS01226T9trBnm4PapH4q0HRPR7I24Tan6YxKxsSmHGJgR+SQz2bD+EAd3RGA==",
+      "type": "package",
+      "path": "suave/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.1/Suave.dll",
+        "lib/netstandard2.1/Suave.pdb",
+        "lib/netstandard2.1/Suave.xml",
+        "paket-installmodel.cache",
+        "src/Suave/AssemblyInfo.fs",
+        "src/Suave/Authentication.fs",
+        "src/Suave/Authentication.fsi",
+        "src/Suave/Combinators.fs",
+        "src/Suave/Combinators.fsi",
+        "src/Suave/Compression.fs",
+        "src/Suave/ConnectionFacade.fs",
+        "src/Suave/Cookie.fs",
+        "src/Suave/Cookie.fsi",
+        "src/Suave/CookieSerialiser.fs",
+        "src/Suave/DefaultTlsProvider.fs",
+        "src/Suave/Globals.fs",
+        "src/Suave/Headers.fs",
+        "src/Suave/Http.fs",
+        "src/Suave/Http.fsi",
+        "src/Suave/HttpOutput.fs",
+        "src/Suave/Json.fs",
+        "src/Suave/Model.fs",
+        "src/Suave/Native.fs",
+        "src/Suave/Operators.fs",
+        "src/Suave/ParsingAndControl.fs",
+        "src/Suave/Proxy.fs",
+        "src/Suave/Sockets/AsyncSocket.fs",
+        "src/Suave/Sockets/AsyncUserToken.fs",
+        "src/Suave/Sockets/BufferManager.fs",
+        "src/Suave/Sockets/ConcurrentPool.fs",
+        "src/Suave/Sockets/Connection.fs",
+        "src/Suave/Sockets/ITransport.fs",
+        "src/Suave/Sockets/SocketBinding.fs",
+        "src/Suave/Sockets/SocketMonad.fs",
+        "src/Suave/Sockets/SocketOp.fs",
+        "src/Suave/Sockets/TcpTransport.fs",
+        "src/Suave/Sockets/TransportStream.fs",
+        "src/Suave/Sscanf.fs",
+        "src/Suave/State.fs",
+        "src/Suave/SuaveConfig.fs",
+        "src/Suave/Tcp.fs",
+        "src/Suave/TcpServerFactory.fs",
+        "src/Suave/Utils/ASCII.fs",
+        "src/Suave/Utils/AsyncExtensions.fs",
+        "src/Suave/Utils/AsyncResultCell.fs",
+        "src/Suave/Utils/Bytes.fs",
+        "src/Suave/Utils/Choice.fs",
+        "src/Suave/Utils/Collections.fs",
+        "src/Suave/Utils/Compression.fs",
+        "src/Suave/Utils/Crypto.fs",
+        "src/Suave/Utils/CultureInfoCache.fs",
+        "src/Suave/Utils/Logging.fs",
+        "src/Suave/Utils/OpenMemoryStream.fs",
+        "src/Suave/Utils/Parse.fs",
+        "src/Suave/Utils/Parsing.fs",
+        "src/Suave/Utils/RangedStream.fs",
+        "src/Suave/Utils/ThreadSafeRandom.fs",
+        "src/Suave/Utils/TraceHeader.fs",
+        "src/Suave/Utils/YoLo.fs",
+        "src/Suave/Web.fs",
+        "src/Suave/WebPart.fs",
+        "src/Suave/WebPart.fsi",
+        "src/Suave/WebSocket.fs",
+        "suave.2.6.0.nupkg.sha512",
+        "suave.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "FSharp.Core >= 5.0.0",
+      "NewtonSoft.json >= 12.0.3",
+      "Suave >= 2.6.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/arjuntr/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/arjuntr/Desktop/To Submit/project4_2/Twitter_Clone.fsproj",
+      "projectName": "Twitter_Clone",
+      "projectPath": "/Users/arjuntr/Desktop/To Submit/project4_2/Twitter_Clone.fsproj",
+      "packagesPath": "/Users/arjuntr/.nuget/packages/",
+      "outputPath": "/Users/arjuntr/Desktop/To Submit/project4_2/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/arjuntr/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "FSharp.Core": {
+            "target": "Package",
+            "version": "[5.0.0, )",
+            "generatePathProperty": true
+          },
+          "NewtonSoft.json": {
+            "target": "Package",
+            "version": "[12.0.3, )",
+            "generatePathProperty": true
+          },
+          "Suave": {
+            "target": "Package",
+            "version": "[2.6.0, )",
+            "generatePathProperty": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

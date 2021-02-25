@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <style>
+        label {
+            display: block;
+            font: .9rem 'Fira Sans', sans-serif;
+        }
+
+        input[type='submit'],
+        label {
+            margin-top: 1rem;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 300px;
+            position: fixed;
+            z-index: 1;
+            top: 50px;
+            left: 0;
+            background-color: #c6d9e6;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidenav button {
+            margin: 5px;
+            width: 200px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+
+        .sidenav button:hover {
+            background-color: #4c98afb5;
+            border: 2px solid #181414;
+        }
+    </style>
+</head>
+
+<body>
+    <nav style="border: 1px solid #384448;
+        background: #217ebf;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        height: 50px;">
+
+        <div>
+            <div style="color: #fff;
+                          font-size: 28px;
+                          font-family: Calibri;
+                          font-variant: petite-caps;
+                          text-align: center;">
+                Twitter Clone
+            </div>
+
+            <div style="margin-top: -30px;">
+                <button id="logoutButton" style="float: right; cursor: pointer; display: none;
+                    margin-right: 5px;">Logout</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="userLoggedOut" style="display: block;">
+
+        <div class="sidenav" style="padding-top: 200px;">
+            <button onclick="toggleView('registerView')">Register</button>
+            <button onclick="toggleView('loginView')">Login</button>
+
+        </div>
+
+        <div id="registerView" style="display: block;
+                padding: 10px;
+                width: 500px;
+                margin-left: 500px;
+                margin-top: 120px;">
+            <div>
+                <label for="username"><b>Username:</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="text" id="username" name="username">
+            </div>
+
+            <div>
+                <label for="pass"><b>Password:</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="password" id="pass" name="password" minlength="8"
+                    required>
+            </div>
+
+            <button id="sign-in" class="w3-btn w3-blue-grey" style="margin-top:5px">Register</button>
+        </div>
+
+
+        <div id="loginView" style="display: none;
+                padding: 10px;
+                width: 500px;
+                margin-left: 500px;
+                margin-top: 120px;">
+            <div>
+                <label for="username"><b>Username:</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="text" id="username2" name="username">
+            </div>
+            
+            <div>
+                <label for="pass"><b>Password:</b></label>
+                <input class="w3-input w3-border w3-light-grey" type="password" id="pass2" name="password" minlength="8" required>
+            </div>
+        
+            <button id="login" class="w3-btn w3-blue-grey" style="margin-top:5px">Login</button>
+        </div>
+
+        <div id="errorMessageView" style="margin-left: 200px; display: none; text-align: center;">
+            <i class="fa fa-bell" style="font-size: 24px;display: inline-block;margin-top: 4%;margin-left: 5px;"></i>
+            <div id="errorMessageViewList" style="display: inline-block;"></div>
+        </div>
+    </div>
+
+
+    <div id="userLoggedIn" style="margin: 10px; display: none;">
+
+        <div class="sidenav">
+            <button onclick="toggleView('sendTweetView')">Send Tweet</button>
+            <button onclick="toggleView('subscribeView')">Subscribe</button>
+            <button onclick="toggleView('queryHashtagView')">Query Hashtag</button>
+            <button onclick="toggleView('queryMentionView')">Query Mention</button>
+
+            <div
+                style="margin-top: 20px; padding: 5px; margin-left: 5px; margin-right: 5px; border-top: 2px solid #2b5e70;">
+                <i class="fa fa-user" style="font-size:32px;color:#2b2222;display: inline-block;"></i>
+                <label id="currentUser" style="display: inline-block; font-size: 20px;"><b>user1</b></label>
+            </div>
+
+            <div style="width: 300px;">
+                <div style="width: 150px; display: inline-grid; padding: 5px;">
+                    <label style="margin-left: 15px;"><b>Followers</b></label>
+                    <ul id="followersList">
+                    </ul>
+                </div>
+
+                <div style="width: 140px; display: inline-grid;">
+                    <label style="margin-left: 15px;"><b>Following</b></label>
+                    <ul id="followingList">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="leftView" style="width: 35%; float: left; margin-left: 300px;">
+            <div id="actionList" style="height: 340px; border: 2px solid #006487;">
+                <div id="output"></div>
+
+                <div id="sendTweetView" style="margin-top: 5px; display: block; padding: 10px;">
+                    <div>Send a tweet : </div>
+                    <textarea type="text" placeholder="What's happening?" id="tweet" style="width: -webkit-fill-available; padding: 10px;
+                          margin: 5px; height: 100px;"></textarea>
+                    <br>
+                    <button id="sendTweet" class="w3-btn w3-blue-grey" style="margin: 5px;">Send Tweet</button>
+                </div>
+
+                <div id="subscribeView" style="margin-top: 5px; display: none; padding: 10px;">
+                    <div>Enter the username you want to follow : </div>
+                    <input type="text" placeholder="Enter user name to be followed.." id="followee" style="width: -webkit-fill-available; padding: 10px;
+                          margin: 5px;">
+                    <br>
+                    <button id="subscribe" class="w3-btn w3-blue-grey" style="margin: 5px;">Subscribe</button>
+                </div>
+
+
+                <div id="queryHashtagView" style="margin-top: 5px; display: none; padding: 10px;">
+                    <div>Query a hashtag : </div>
+                    <input type="text" placeholder="Enter a #QueryHashtag.." id="queryHashtag" style="width: -webkit-fill-available; padding: 10px;
+                          margin: 5px;">
+                    <br>
+                    <button id="queryHashtagButton" class="w3-btn w3-blue-grey" style="margin: 5px;">Query</button>
+                </div>
+
+                <div id="queryMentionView" style="margin-top: 5px; display: none; padding: 10px;">
+                    <div>Query a mention :</div>
+                    <input type="text" placeholder="Enter a @QueryMention.." id="queryMention" style="width: -webkit-fill-available; padding: 10px;
+                          margin: 5px;">
+                    <br>
+                    <button id="queryMentionButton" class="w3-btn w3-blue-grey" style="margin: 5px;">Query</button>
+                </div>
+
+                <div id="activityView" style="position: relative;">
+                    <i class="fa fa-bell" style="font-size: 24px;display: inline-block;margin-top: 4%;margin-left: 5px;"></i>
+                    <div id="activityList" style="display: inline-block;"></div>
+                </div>
+            </div>
+
+            <div id="activityView" style="height: 350px; border: 2px solid #006487; margin-top: 5px; overflow-y: auto;">
+                <div style="text-align: center;">
+                    <label style="font-size: larger;">Query Results</label>
+                </div>
+            
+                <ul id="queryResult" style="display: none;"></ul>
+            </div>
+
+        </div>
+
+        <div id="newsFeed" style="width: 43%; height: 695px; border: 2px solid #006487;float:right; overflow-y: auto;">
+            <div style="text-align: center;">
+                <label style="font-size: larger;">News Feed</label>
+            </div>
+            <ul id="tweetList">
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script language="javascript" type="text/javascript">
+
+    var wsUri = "ws://localhost:8080/websocket";
+    var output = document.getElementById("output");
+    var previousView = "registerView";
+
+    var globalCredetentials = {
+        userID: "user1",
+        password: ""
+    }
+
+    function toggleView(id) {
+        if (id != previousView) {
+            document.getElementById(previousView).style.display = "none";
+            document.getElementById(id).style.display = "block";
+            previousView = id;
+        }
+    }
+
+    function init() {
+        output = document.getElementById("output");
+        testWebSocket();
+    }
+
+    function testWebSocket() {
+        websocket = new WebSocket(wsUri);
+        websocket.onopen = function (evt) { onOpen(evt) };
+        websocket.onclose = function (evt) { onClose(evt) };
+        websocket.onmessage = function (evt) { onMessage(evt) };
+        websocket.onerror = function (evt) { onError(evt) };
+    }
+
+    function onOpen(evt) {
+        registerUser();
+    }
+
+    function onClose(evt) {
+        // writeToScreen("DISCONNECTED");
+    }
+
+    function onMessage(evt) {
+        let response = JSON.parse(evt.data);
+        console.log(response);
+        updateActivityView(response);
+        // websocket.close();
+    }
+
+    function onError(evt) {
+        writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+    }
+
+    function doSend(message) {
+        document.getElementById("queryResult").style.display = "none";
+        document.getElementById("activityList").textContent = "";
+
+        var request = JSON.stringify(message);
+        console.log(request);
+        websocket.send(request);
+    }
+
+    function writeToScreen(message) {
+        var pre = document.createElement("p");
+        pre.style.wordWrap = "break-word";
+        pre.innerHTML = message;
+        output.appendChild(pre);
+    }
+
+    function updateActivityView(response) {
+        var div = document.getElementById("activityList");
+        div.textContent = response.ResponseMessage;
+        document.getElementById("errorMessageViewList").textContent = "";
+
+        if (response.ResponseTask == "LoginUser") {
+            if (response.ResponseStatus == 0) {
+                document.getElementById("errorMessageView").style.display = "block";
+                document.getElementById("errorMessageViewList").textContent = response.ResponseMessage;
+            }
+            else {
+                loginApp(response);
+            }
+        }
+        else if (response.ResponseTask == "LogoutUser") {
+            logoutApp(response);
+        }
+        else if (response.ResponseTask == "SendTweet" || response.ResponseTask == "Retweet") {
+            updateNewsFeed(response.ResponseData);
+        }
+        else if (response.ResponseTask == "Subscribe") {
+            updateFollowingTable(response.ResponseData);
+        }
+        else if (response.ResponseTask == "Followers") {
+            updateFollowersTable(response.ResponseData);
+        }
+        else if (response.ResponseTask == "QueryHashtag" || response.ResponseTask == "QueryMention") {
+            updateQueryResult(response.ResponseData);
+        }
+        else if (response.ResponseTask = "RegisterUser") {
+            if (response.ResponseStatus == 0) {
+                document.getElementById("errorMessageView").style.display = "block";
+                document.getElementById("errorMessageViewList").textContent = response.ResponseMessage;
+            }
+            else {
+                loginApp(response);
+                document.getElementById("currentUser").textContent = globalCredetentials.userID;
+            }
+        }
+    }
+
+    function fetchUserData() {
+        fetchFeed();
+        fetchFollowing();
+    }
+
+    function loginApp(response) {
+        document.getElementById("logoutButton").style.display = "block";
+        document.getElementById("userLoggedOut").style.display = "none";
+        document.getElementById("userLoggedIn").style.display = "block";
+
+        toggleView("sendTweetView");
+    }
+
+    function logoutApp(response) {
+        document.getElementById("errorMessageView").style.display = "none";
+        document.getElementById("logoutButton").style.display = "none";
+        document.getElementById("userLoggedOut").style.display = "block";
+        document.getElementById("userLoggedIn").style.display = "none";
+
+        toggleView("loginView");
+    }
+
+    function updateQueryResult(response) {
+        var ul = document.getElementById("queryResult");
+
+        if (response.length) {
+            ul.innerHTML = "";
+            ul.style.display = "block";
+        }
+        response.forEach(tweet => {
+            var li = document.createElement('li');
+            li.style.marginBottom = "10px";
+            li.appendChild(document.createTextNode(tweet));
+            ul.appendChild(li);
+        });
+    }
+
+    function updateFollowingTable(response) {
+        var ul = document.getElementById("followingList");
+
+        if (response.length) {
+            ul.innerHTML = "";
+        }
+        response.forEach(user => {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(user));
+            ul.appendChild(li);
+        });
+    }
+
+    function updateFollowersTable(response) {
+        var ul = document.getElementById("followersList");
+
+        if (response.length) {
+            ul.innerHTML = "";
+        }
+        response.forEach(user => {
+            var li = document.createElement('li');
+            li.appendChild(document.createTextNode(user));
+            ul.appendChild(li);
+        });
+    }
+
+    var updateNewsFeed = function (response) {
+        var ul = document.getElementById("tweetList");
+        if (response.length) {
+            ul.innerHTML = "";
+        }
+
+        for (var i = 0; i < response.length; i++) {
+            var tweet = response[i];
+            var li = document.createElement('li');
+            li.style.marginBottom = "10px";
+
+            var button = document.createElement('button');
+            button.textContent = "Retweet";
+            button.setAttribute("id", "retweetButton");
+            button.style.lineHeight = "1";
+            button.style.float = "right";
+            button.style.marginRight = "10px";
+
+            li.appendChild(document.createTextNode(tweet));
+            li.innerHTML = li.innerHTML + " ";
+            li.appendChild(button);
+            ul.appendChild(li);
+        }
+    }
+
+
+    function fetchFeed() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "FetchFeed";
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        doSend(requestParams);
+    }
+
+    function fetchFollowing() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "FetchFollowing";
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        doSend(requestParams);
+    }
+
+    var getInputJsonFormat = function () {
+        var json = {
+            Task: "",
+            UserID: "",
+            Password: "",
+            TargetUserID: "",
+            Tweet: "",
+            Hashtag: "",
+            Mention: ""
+        }
+        return json;
+    }
+
+
+    function registerUser() {
+        const userID = document.querySelector("#userLoggedOut #username").value;
+        const password = document.querySelector("#userLoggedOut #pass").value;
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "RegisterUser"
+        requestParams.UserID = globalCredetentials.userID = userID
+        requestParams.Password = globalCredetentials.password = password
+
+        console.log(requestParams);
+
+        document.querySelector("#userLoggedOut #username").value = ""
+        document.querySelector("#userLoggedOut #pass").value = ""
+
+        doSend(requestParams);
+    }
+
+    function loginUser() {
+        const userID = document.querySelector("#userLoggedOut #username2").value;
+        const password = document.querySelector("#userLoggedOut #pass2").value;
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "LoginUser";
+        requestParams.UserID = globalCredetentials.userID = userID;
+        requestParams.Password = globalCredetentials.password = password;
+
+        console.log(requestParams);
+
+        document.querySelector("#userLoggedOut #username2").value = "";
+        document.querySelector("#userLoggedOut #pass2").value = "";
+
+        doSend(requestParams);
+    }
+
+    function logoutUser() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "LogoutUser";
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        doSend(requestParams);
+    }
+
+
+    function subscribe() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "Subscribe";
+        requestParams.TargetUserID = document.getElementById("followee").value;
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        document.getElementById("followee").value = "";
+
+        doSend(requestParams);
+    }
+
+    function sendTweet() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "SendTweet";
+        requestParams.Tweet = document.getElementById("tweet").value;
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        document.getElementById("tweet").value = "";
+
+        doSend(requestParams);
+    }
+
+    function retweet(tweet) {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "Retweet";
+        requestParams.Tweet = tweet;
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        doSend(requestParams);
+    }
+
+    function queryHashtag() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "QueryHashtag";
+        requestParams.Hashtag = document.getElementById("queryHashtag").value;
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        document.getElementById("queryHashtag").value = "";
+
+        doSend(requestParams);
+    }
+
+    function queryMention() {
+        let requestParams = getInputJsonFormat();
+        requestParams.Task = "QueryMention";
+        requestParams.Mention = document.getElementById("queryMention").value;
+        requestParams.UserID = globalCredetentials.userID;
+        requestParams.Password = globalCredetentials.password;
+
+        console.log(requestParams);
+
+        document.getElementById("queryMention").value = "";
+
+        doSend(requestParams);
+    }
+
+    window.addEventListener("load", updateNewsFeed, false);
+
+    document.querySelector('#userLoggedOut #sign-in').addEventListener("click", testWebSocket);
+    document.querySelector('#userLoggedOut #login').addEventListener("click", loginUser);
+    document.getElementById("logoutButton").addEventListener("click", logoutUser);
+    document.getElementById("subscribe").addEventListener("click", subscribe);
+    document.getElementById("sendTweet").addEventListener("click", sendTweet);
+    document.getElementById("queryHashtagButton").addEventListener("click", queryHashtag);
+    document.getElementById("queryMentionButton").addEventListener("click", queryMention);
+
+    $('body').on("click", "#retweetButton", function () {
+        var res = this.parentElement.textContent;
+        res = res.substring(0, res.lastIndexOf(" "))
+        retweet(res);
+    });
+</script>

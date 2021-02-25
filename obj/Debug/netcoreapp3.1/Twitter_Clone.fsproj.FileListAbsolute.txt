@@ -1,0 +1,84 @@
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.deps.json
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.runtimeconfig.json
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.runtimeconfig.dev.json
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.pdb
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/FSharp.Core.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Suave.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/cs/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/de/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/es/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/fr/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/it/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/ja/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/ko/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/pl/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/pt-BR/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/ru/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/tr/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/zh-Hans/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/zh-Hant/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.fsprojAssemblyReference.cache
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.AssemblyInfoInputs.cache
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.AssemblyInfo.fs
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.fsproj.CopyComplete
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.dll
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.pdb
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.genruntimeconfig.cache
+/Users/arjuntr/Desktop/DOS_4.2/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.deps.json
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.runtimeconfig.json
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.runtimeconfig.dev.json
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Twitter_Clone.pdb
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/FSharp.Core.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/Suave.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/cs/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/de/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/es/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/fr/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/it/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/ja/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/ko/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/pl/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/pt-BR/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/ru/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/tr/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/zh-Hans/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/bin/Debug/netcoreapp3.1/zh-Hant/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.fsprojAssemblyReference.cache
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.AssemblyInfoInputs.cache
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.AssemblyInfo.fs
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.fsproj.CopyComplete
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.dll
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.pdb
+/Users/arjuntr/Desktop/DOS_4.2/Twitter-Clone-Websockets/DOS_Project_4.2/obj/Debug/netcoreapp3.1/Twitter_Clone.genruntimeconfig.cache
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Twitter_Clone.deps.json
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Twitter_Clone.runtimeconfig.json
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Twitter_Clone.runtimeconfig.dev.json
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Twitter_Clone.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Twitter_Clone.pdb
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/FSharp.Core.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/Suave.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/cs/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/de/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/es/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/fr/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/it/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/ja/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/ko/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/pl/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/pt-BR/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/ru/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/tr/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/zh-Hans/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/bin/Debug/netcoreapp3.1/zh-Hant/FSharp.Core.resources.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.fsprojAssemblyReference.cache
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.AssemblyInfoInputs.cache
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.AssemblyInfo.fs
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.fsproj.CopyComplete
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.dll
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.pdb
+/Users/arjuntr/Desktop/To Submit/project4_2/obj/Debug/netcoreapp3.1/Twitter_Clone.genruntimeconfig.cache
